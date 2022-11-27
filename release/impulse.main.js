@@ -400,7 +400,7 @@
                     }
                 };
                 shellsTeleport = (e, t) => {
-                    const a = this.#e.shellsTeleportData,//Ç±ÔÚµÄ´íÎó
+                    const a = this.#e.shellsTeleportData,//ïå©“è…”æ¸£æ˜«
                         s = t.shellCache_0?.itemsInUse?.toArray();
                     if (!i.P6.isArrayValid(s)) return;
                     for (const e of s) {
@@ -667,7 +667,7 @@
                 if (!e || e.childElementCount < 2) return;
                 if (2 === e.childElementCount) {
                     const t = document.createElement("div");
-                    t.innerHTML = '<div class="sc-bwzfXH cmInNa" data-style="BattleHudFpsComponentStyle-row"><span class="sc-bxivhb fPSAir" data-style="BattleHudFpsComponentStyle-label">PPS: </span><span class="sc-bxivhb bcGHtx" data-style="BattleHudFpsComponentStyle-value" id="pps">0</span></div>', e.appendChild(t)
+                    t.innerHTML = '<div class="sc-bwzfXH cmInNa" data-style="BattleHudFpsComponentStyle-row"><span class="sc-bxivhb fPSAir" data-style="BattleHudFpsComponentStyle-label">(QQ1719078)PPS: </span><span class="sc-bxivhb bcGHtx" data-style="BattleHudFpsComponentStyle-value" id="pps">0</span></div>', e.appendChild(t)
                 }
                 const t = document.getElementById("pps"),
                     a = s.oQ.packetCounter;
@@ -1300,7 +1300,7 @@
                         let t = localStorage.getItem(e);
                         t && (t = JSON.parse(t), this.data[e].ID === t.ID) ? this.data[e] = t : (console.error(`[impulse] ${(new Date).toJSON().slice(11, 19)} - No config found - ${e}`), this.saveState(e))
                     }
-                    this.data.otherData.showAlert && (this.data.otherData.showAlert = !1, alert("§ª§ã§á§à§İ§î§Ù§å§Û§ä§Ö §ä§à§İ§î§Ü§à §ß§Ñ §ä§Ö§ã§ä§à§Ó§à§Ş §ã§Ö§â§Ó§Ö§â§Ö §Ú §ä§à§İ§î§Ü§à §Ó §â§Ö§Ø§Ú§Ş§Ö §á§Ñ§â§Ü§å§â!\nUse only on the test server and only in parkour mode!")), this.saveStates()
+                    this.data.otherData.showAlert && (this.data.otherData.showAlert = !1, alert("å¦’æ‰¼æ‰­æŠ‰æŠ–æŠ†æˆ’æ‰¹æŠ„æ‰¾å¿« æ‰¾æŠ‰æŠ–æŠ†æŠ—æŠ‰ æ‰¶å¿˜ æ‰¾å¿«æ‰¼æ‰¾æŠ‰å¿—æŠ‰æŠ€ æ‰¼å¿«æŠŠå¿—å¿«æŠŠå¿« æˆ‘ æ‰¾æŠ‰æŠ–æŠ†æŠ—æŠ‰ å¿— æŠŠå¿«å¿ªæˆ‘æŠ€å¿« æ‰­å¿˜æŠŠæŠ—æ‰¹æŠŠ!\nUse only on the test server and only in parkour mode!")), this.saveStates()
                 }
             }
         },
@@ -1628,8 +1628,8 @@
                 Z = () => {
                     T.reset(), G.reset(), x.reset(), P.reset(), A.reset(), M.reset(), V.reset(), z.reset()
                 };
-            //            if (!document.URL.includes("test-eu.tankionline.com")) throw alert("½öÖ§³Ö²âÊÔ·ş£¡"), new Error("stop");
-            //            if ("0.64.3" !== GM_info.script.version) throw alert("§µ §Ó§Ñ§ã §å§ã§ä§Ñ§ß§à§Ó§İ§Ö§ß§Ñ §å§ã§ä§Ñ§â§Ö§Ó§ê§Ñ§ñ §Ó§Ö§â§ã§Ú§ñ §ã§Ü§â§Ú§á§ä§Ñ!\nYou have an outdated version of the script installed!"), unsafeWindow.open("https://raw.githubusercontent.com/sheezzmee/impulse/main/impulse.user.js", "_self"), new Error("stop");
+            //            if (!document.URL.includes("test-eu.tankionline.com")) throw alert("èººç›“å¥è†å½¸ç£ã„"), new Error("stop");
+            //            if ("0.64.3" !== GM_info.script.version) throw alert("å­ å¿—å¿˜æ‰¼ æ‰¹æ‰¼æ‰¾å¿˜æ‰¶æŠ‰å¿—æŠ–å¿«æ‰¶å¿˜ æ‰¹æ‰¼æ‰¾å¿˜æŠŠå¿«å¿—æ‰®å¿˜æ”¸ å¿—å¿«æŠŠæ‰¼æˆ‘æ”¸ æ‰¼æŠ—æŠŠæˆ‘æ‰­æ‰¾å¿˜!\nYou have an outdated version of the script installed!"), unsafeWindow.open("https://raw.githubusercontent.com/sheezzmee/impulse/main/impulse.user.js", "_self"), new Error("stop");
             ! function e() {
                 requestAnimationFrame(e);
                 const t = b.root,
